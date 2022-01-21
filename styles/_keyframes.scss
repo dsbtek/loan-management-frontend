@@ -1,0 +1,11 @@
+@keyframes fall {
+    0% {
+      transform: translateY(-15px);
+    }
+    25%, 75% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }

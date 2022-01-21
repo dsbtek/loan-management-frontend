@@ -1,0 +1,1132 @@
+
+
+$borderWidth: 1.5px;
+$appBorder:1px solid rgba(0, 0, 0, 0.1);
+$mobile: 768px;
+$small: 768px;
+$medium: 769px;
+$dashboardTheme:#334D5C;
+$hoverColor: #5893ec;
+
+
+/// Mobile Version
+@media screen and (max-width: 760px) {
+  .body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    line-height: 1;
+    height: 100vh;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+.h1, .h2, .h3 {
+    font-weight: 400;
+}
+.Link .a {
+    text-decoration: none;
+    // color:$link-color;
+    cursor:pointer;
+}
+
+.dashboard-nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(170.63deg,
+     #66D7F0 1.78%,
+      #66D7F0 1.79%,
+       #56C0EE 28.42%,
+        #16B5D8 45.51%,
+         #2890DC 70.64%,
+          #0075FF 91.75%),
+           #C4C4C4;
+}
+.dashboard-container{
+    height: 100%;
+    width: 100%;
+}
+.DashboardHeader{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: $borderWidth solid rgba(0, 0, 0, 0.1);
+}
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    left: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+}
+.dashboard-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    // background-color: $dashboardTheme;
+    // visibility: hidden;
+}
+.nav{
+    margin-top: 5rem;
+}
+.dashboard-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: $appBorder;
+    input {
+        width: 350px;
+        border-radius: 8px;
+        padding: 10px;
+
+    }
+}
+.InputHolders{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    // input{
+    //     width: 750px;
+    // }
+   
+}
+.InputWrap{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // input {
+    //     margin-bottom: 10px;
+    //     width: 100%;
+    //     height: 50px;
+    // }
+    // Button {
+    //     position: absolute;
+    //     right: 5px;
+    //     border-radius: 15px;
+    //     height: 50px;
+    //     border: 0;
+    //     background-color: $hoverColor;
+    // }
+}
+.wrapArrInput{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    input {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 50px;
+    }
+    li{
+        list-style: none;
+    }
+}
+
+/*--------------------
+Form
+--------------------*/
+.form {
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin: 15px 0;
+    position: relative;
+    width: 100%;
+  }
+  
+}
+.emailNum{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#emailNumInput {
+  width: 100%;
+  
+}
+.createLoanWrap{
+  display: flex;
+  flex-direction: column;
+  // align-items: flex-start;
+  justify-content: space-around;
+  padding: 5px;
+  margin: auto;
+  // margin-top: 50px;
+  width: 100%;
+  // border: gray 2px solid;
+
+  .itemWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    // background-color: hotpink;
+    width: 100%;
+    height: 650px;
+  }
+  .wrapCustomPay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // input{
+    //   width: 150px;
+    //   font-size: 10px;
+    // }
+  }
+  .CustomPay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .repayTypeCus{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    select{
+      width: 100%;
+    }
+  }
+  .loanField{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    // background-color: #ff000d;
+    // width: 450px;
+    margin: 10px 0px;
+   
+  }
+  
+
+  Button{
+    position: relative;
+    left: 71%;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(16, 197, 0);
+  }
+}
+.wrapFormInput{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // padding: 0px 0px 10px;
+  // background-color: gray;
+}
+
+.duration{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid hsla(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  // background-color: rgb(189, 192, 189);
+   input{
+    width: 40%;
+    margin-left: 10px;
+  }
+  .numPeriod{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    select{
+      width: 113px;
+    }
+  }
+}
+
+/*--------------------
+Signup
+--------------------*/
+.signup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 800px;
+  background: hsl(0, 0, 100);
+  border-radius: 10px;
+  box-shadow: 0 3px 25px hsla(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+}
+
+.signup-connect,
+.signup-classic
+{
+  width: 50%;
+  padding: 30px 50px;
+}
+
+.signup-connect {
+  background: linear-gradient(134deg, hsl(44, 96%, 65%), hsl(34, 95%, 45%));
+  color: hsl(0, 0, 100);
+  
+  h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
+  }
+  
+}
+
+.signup-classic {
+  
+  h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 23px;
+    margin-bottom: 43px;
+    text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
+  }
+  
+}
+.addCusPay{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #ffffff;
+    background-color: #0075FF;
+    border-radius: 15px;
+    width: 30px;
+    height: 48px;
+    margin-left: 5px;
+    // margin-top: 14px;
+    z-index: 50;
+    cursor: pointer;
+}
+.removeCusPay{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #ffffff;
+    background-color: #ff2600;
+    border-radius: 15px;
+    width: 30px;
+    height: 48px;
+    margin-left: 5px;
+    // margin-top: 14px;
+    z-index: 50;
+    cursor: pointer;
+}
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #ffffff;
+    background-color: #0075FF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: 5px;
+    z-index: 50;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #ff000d;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 14px;
+    padding-bottom: 5px;
+    z-index: 50;
+    cursor: pointer;
+}
+.checkField{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  input{
+    height: 25px;
+  }
+}
+.amountPeriodWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  input, select{
+    width: 200px;
+  }
+}
+
+
+.FormInput label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.FormInput {
+  // padding: 0.5rem 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  height: 40px;
+  color: hsl(0, 0, 20);
+  // padding: 15px 40px 15px 15px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 2px solid hsla(0, 0, 0, 0.3);
+  vertical-align: top;
+}
+.FormInput:hover {
+  border: none;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+}
+.FormInput:focus {
+  border: none;
+  border-bottom: 5px solid rgba(0, 140, 255, 0.3);
+  outline: none;
+}
+.FormTextArea label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.FormTextArea{
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  vertical-align: top;
+  width: 100%;
+  height: 70px;
+  color: hsl(0, 0, 20);
+  border-bottom: 2px solid rgba(1, 1, 1, 0.3); 
+
+}
+.FormTextArea:hover {
+  // border: none;
+  border-bottom: 5px solid rgba(1, 1, 1, 0.3); 
+}
+.FormTextArea:focus {
+  // border: none;
+  border-bottom: 5px solid rgba(0, 140, 255, 0.3);
+  outline: none;
+}
+.error{
+  color: #ff000d;
+}
+.card-form{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  margin: 15px 15px;
+  padding-bottom: 10px;
+  
+  
+  .form-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    background:#2890DC;
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .form-body{
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    .row{
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      
+      input[type="text"]{
+        appearance: none;
+        width: 100%;
+        margin: 0 15px;
+        height: 35px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background: #e8ebed;
+        color: #576366;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .rule{
+    height: 2px;
+    background: #e8ebed;
+    margin: 0px 35px;
+  }
+  
+  .form-footer{
+    margin: 0 25px 15px 25px;
+    padding: 15px 10px;
+    
+    a{
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 15px;
+      background: #27ae60;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    
+    span{
+      margin-left: 8px;
+    }
+  } 
+}}
+
+
+
+/// Desktop Version
+@media screen and (min-width: $medium) {
+  .body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    line-height: 1;
+    height: 100vh;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+.h1, .h2, .h3 {
+    font-weight: 400;
+}
+.Link .a {
+    text-decoration: none;
+    // color:$link-color;
+    cursor:pointer;
+}
+
+.dashboard-nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+    background: #334D5C;
+}
+.dashboard-container{
+    height: 100%;
+    width: 100%;
+}
+.DashboardHeader{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: $borderWidth solid rgba(0, 0, 0, 0.1);
+}
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    left: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+}
+.dashboard-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-color: $dashboardTheme;
+    // visibility: hidden;
+}
+// .nav{
+//     margin-top: 5rem;
+// }
+.dashboard-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: $appBorder;
+    input {
+        width: 350px;
+        border-radius: 8px;
+        padding: 10px;
+
+    }
+}
+.loan-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.InputHolders{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    // input{
+    //     width: 750px;
+    // }
+   
+}
+.InputWrap{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    Button {
+      position: relative;
+      margin-top: 15px;
+      border-radius: 15px;
+      height: 50px;
+      border: 0;
+      background-color: $hoverColor;
+    }
+}
+.wrapArrInput{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    input {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 50px;
+    }
+    li{
+        list-style: none;
+    }
+}
+
+
+
+/*--------------------
+Buttons
+--------------------*/
+.btn {
+  display: block;
+  // background: hsl(86, 76%, 71%);
+  color: hsl(0, 0, 100);
+  text-decoration: none;
+  // margin: 20px 0;
+  padding: 15px 15px;
+  border-radius: 60%;
+  position: relative;
+  
+} 
+
+
+
+/*--------------------
+Form
+--------------------*/
+.form {
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin: 15px 0;
+    position: relative;
+    width: 100%;
+  }
+  
+}
+.emailNum{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#emailNumInput {
+  width: 100%;
+  
+}
+.createLoanWrap{
+  display: flex;
+  flex-direction: row;
+  // align-items: flex-start;
+  justify-content: space-around;
+  padding: 5px;
+  margin: auto;
+  // margin-top: 3px;
+  width: 100%;
+  // border: gray 2px solid;
+
+  .itemWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    // background-color: hotpink;
+    width: 100%;
+    height: 650px;
+  }
+  .wrapCustomPay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // input{
+    //   width: 150px;
+    //   font-size: 10px;
+    // }
+  }
+  .CustomPay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .repayTypeCus{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    select{
+      width: 100%;
+    }
+  }
+  .loanField{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px 0px;
+   
+  }
+  
+  Button{
+    position: relative;
+    margin-top: 15px;
+    left: 71%;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(16, 197, 0);
+  }
+}
+.wrapFormInput{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // padding: 0px 0px 10px;
+  // background-color: gray;
+}
+
+.duration{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid hsla(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  // background-color: rgb(189, 192, 189);
+   input{
+    width: 40%;
+    margin-left: 10px;
+  }
+  .numPeriod{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    select{
+      width: 113px;
+    }
+  }
+}
+
+/*--------------------
+Signup
+--------------------*/
+.signup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 800px;
+  background: hsl(0, 0, 100);
+  border-radius: 10px;
+  box-shadow: 0 3px 25px hsla(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+}
+
+.signup-connect,
+.signup-classic
+{
+  width: 50%;
+  padding: 30px 50px;
+}
+
+.signup-connect {
+  background: linear-gradient(134deg, hsl(44, 96%, 65%), hsl(34, 95%, 45%));
+  color: hsl(0, 0, 100);
+  
+  h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
+  }
+  
+}
+
+.signup-classic {
+  
+  h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 23px;
+    margin-bottom: 43px;
+    text-shadow: 0 2px 3px hsla(0, 0, 0, 0.1);
+  }
+  
+}
+.addCusPay{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #ffffff;
+    background-color: #0075FF;
+    border-radius: 15px;
+    width: 30px;
+    height: 48px;
+    margin-left: 5px;
+    // margin-top: 14px;
+    z-index: 50;
+    cursor: pointer;
+}
+.removeCusPay{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #ffffff;
+    background-color: #ff2600;
+    border-radius: 15px;
+    width: 30px;
+    height: 48px;
+    margin-left: 5px;
+    // margin-top: 14px;
+    z-index: 50;
+    cursor: pointer;
+}
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #ffffff;
+    background-color: #0075FF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: 5px;
+    z-index: 50;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #ff000d;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: 14px;
+    padding-bottom: 5px;
+    z-index: 50;
+    cursor: pointer;
+}
+.checkField{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  input{
+    height: 25px;
+  }
+}
+.amountPeriodWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  #selectPeriod{
+    width: 100px;
+    border-radius: 10px;
+    height: 40px;
+  }
+ 
+}
+
+.FormInput label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.FormInput {
+  width: 100%;
+  font-size: 1rem;
+  height: 40px;
+  color: hsl(0, 0, 20);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 2px solid hsla(0, 0, 0, 0.3);
+  vertical-align: top;
+}
+.FormInput:hover {
+  border: none;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+}
+.FormInput:focus {
+  border: none;
+  border-bottom: 5px solid rgba(0, 140, 255, 0.3);
+  outline: none;
+}
+.FormTextArea label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.FormTextArea{
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  vertical-align: top;
+  width: 100%;
+  height: 70px;
+  color: hsl(0, 0, 20);
+  border-bottom: 2px solid rgba(1, 1, 1, 0.3); 
+
+}
+.FormTextArea:hover {
+  border-bottom: 5px solid rgba(1, 1, 1, 0.3); 
+}
+.FormTextArea:focus {
+  border-bottom: 5px solid rgba(0, 140, 255, 0.3);
+  outline: none;
+}
+.error{
+  color: #ff000d;
+}
+.card-form{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  margin: 15px 15px;
+  padding-bottom: 10px;
+
+  
+  
+  .form-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    background:#2890DC;
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .form-body{
+    padding-left: 15px;
+    padding-right: 15px;
+    select{
+      width: 470px;
+    }
+    
+  }
+  
+  .rule{
+    height: 2px;
+    background: #e8ebed;
+    margin: 0px 35px;
+  }
+  
+  .form-footer{
+    margin: 0 25px 15px 25px;
+    padding: 15px 10px;
+    
+    a{
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 15px;
+      background: #27ae60;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    
+    span{
+      margin-left: 8px;
+    }
+  } 
+}
+.dashboard-container{
+  display: flex;
+  flex-direction: row;
+}
+.user-text{
+  color: #B0B0B0;
+}
+.dashboard-header-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 100px;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  .dashboard-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .border-line{
+      height: 25px;
+      width: 2px;
+      border-right: 2px solid #000000;
+      margin: 5px;
+    }
+  }
+  .dashboard-logo{
+    img{
+      position: relative;
+      margin-top: 5px;
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+.dashboard-icons-wrap{
+  
+  .dashboard-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    width: 225px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #20BDB5;
+  }
+
+  .dashboard-links:active{
+    background-color: #20BDB5;
+  }
+
+  .dashboard-links:hover{
+    background-color: #20BDB5;
+  }
+}
+}

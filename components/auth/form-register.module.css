@@ -1,0 +1,19 @@
+.myfomr {
+  border-radius: 20px;
+  height: 50px;
+}
+
+.mybutton {
+  border-radius: 20px;
+}
+
+.inputStyles{
+  border-radius: #7AD0CC 3px solid;
+  border: #7AD0CC 3px solid;
+  width: 100%;
+}
+.inputStyles:focus{
+  border: #7AD0CC 3px solid;
+  border-radius: #7AD0CC 3px solid;
+
+}

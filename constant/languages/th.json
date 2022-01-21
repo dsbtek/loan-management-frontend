@@ -1,0 +1,17 @@
+{
+    "home": {
+      "title": "Homepage"
+    },
+    "layout":{
+
+    },
+    "dashboard" :{
+
+    },
+    "auth": {
+        
+
+    },
+    "hello": "Hello {name}!",
+    "fallback": "Fallback message"
+  }

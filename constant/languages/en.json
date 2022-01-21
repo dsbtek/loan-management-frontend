@@ -1,0 +1,94 @@
+{
+    "home": {
+      "title": "Homepage"
+    },
+    "layout":{
+
+    },
+    "dashboard" :{
+
+    },
+    "login": {
+        "emailAddressPlaceholder": "Email Address",
+        "passwordPlaceholder": "Password",
+        "recoverPasswordText": "Recover Password",
+        "signinText": "Sign In ",
+        "loginButtonLoadingText": "Loading",
+        "loginRecoverPasswordLinkTxt":"Recover",
+        "loginDetailsTxt":"login details",
+        "loginButtonText": "Login"
+    },
+
+    "register": {
+      "firstNamePlaceholder": "First Name",
+      "lastNamePlaceholder": "Last Name",
+      "emailAddressPlaceholder": "Email Address",
+      "mobileNumberPlaceholder": "Mobile Number",
+      "passwordPlaceholder": "Password",
+      "confirmPasswordText": "Confirm Password",
+      "createAnAccountText": "Create an Account",
+      "createAnAccountButtonLoadingText": "Loading",
+      "registerAnd":"and",
+      "registerTerms":"Terms ",
+      "registerCondition": "Conditions",
+      "registerApply":"Apply"
+
+  },
+  "recoverPassword":{
+    "recoverPasswordTxt": "Recover Password",
+    "emailAddressPlaceholder": "Email Address",
+    "recoverPasswordButtonLoadingText": "Loading",
+    "recoverPasswordBtn": "Recover"
+  },
+  "passwordReset":{
+    "passwordResetEmailPlaceholder": "Enter your email",
+    "passwordResetPasswordTxt": "Set New Password",
+    "newPasswordPlaceholder": "Enter New Password ",
+    "confirmPasswordPlaceholder": "Confirm Password ",
+    "recoverPasswordButtonLoadingText": "Loading",
+    "recoverPasswordBtn": "Recover",
+    "resetGuide":"Provide your new password to Resset the password"
+  },
+
+  "logout" :{
+    "logoutLoadingTxt":"Loading",
+    "logoutBtnTxt":"Logout"
+  },
+
+  "newLoanUser":{
+    "newLoanUserTxt": "Create Loan User",
+    "newLoanUserFirstNamePlaceholder": "First Name ",
+    "newLoanUserLastNamePlaceholder": "Last Name ",
+    "newLoanUserMobileNumberPlaceholder": "Mobile Number ",
+    "newLoanUserEmailPlaceholder": "Email ",
+    "newLoanUserLoadingText": "Loading",
+    "newLoanUserBtnTxt": "Create Loan User"
+  },
+  "menu":{
+    "title":"title",
+    "href":"href",
+    "image":"image"
+  },
+
+  "loan":{
+    "loanTitle":"Create Loan",
+    "lender":"Search User",
+    "loanAmount":"Amount $",
+    "loanDuration":"Duration",
+    "loanDateTaken":"Date taken",
+    "loanRepaymentType":"Rapayment type",
+    "loanLepaymentOptions":"Repayment option",
+    "loanPeriod":"Period",
+    "loanUserRemarks":"User remarks",
+    "loanNotify":"Notify",
+    "loanUserNotification":"User notification",
+    "loanNumber":"Number",
+    "loanFrequency":"Frequency",
+    "loanBtnTxt":"Create Loan",
+    "addLoanActionText":"Add loan",
+    "requestLoanActionText":"Request loan",
+    "loanPageTitle": "Loans"
+  }
+
+
+  }

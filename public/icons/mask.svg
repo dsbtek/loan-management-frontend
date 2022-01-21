@@ -1,0 +1,8 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1165_112" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="3" width="16" height="15">
+<ellipse cx="9.83054" cy="10.4387" rx="7.5" ry="6.5" transform="rotate(-33.0151 9.83054 10.4387)" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0_1165_112)">
+<rect x="-12.1191" y="7.49268" width="18.15" height="28.08" transform="rotate(-33.0151 -12.1191 7.49268)" fill="#EE6D55"/>
+</g>
+</svg>
